@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Flexbox</title>
+    <style>
+        * {
+            box-sizing: border-box;
+            /* outline: 1px solid red; */
+        }
+
+        #container {
+            display: flex;
+            flex-wrap: wrap;
+            /* outline: 1px solid red; */
+        }
+
+        #container div {
+            /* border: 1px solid red; */
+            /* outline: 1px solid blue; */
+        }
+
+        .header {
+            flex-basis: 100%;
+            flex-grow: 1;
+            flex-shrink: 0;
+            background-color: #ccc;
+            color: #555;
+            padding: 0 1rem;
+            border-bottom: 2px solid black;
+        }
+
+        .navigation {
+            flex-basis: 10%;
+            flex-grow: 0;
+            flex-shrink: 1;
+            margin: 5% 0;
+            border-right: 2px solid black;
+        }
+
+        .content {
+            flex-basis: 80%;
+            flex-grow: 1;
+            flex-shrink: 0;
+            padding: 0 1rem;
+        }
+
+        nav>ul {
+            /* outline: 1px solid blue; */
+            padding: 0 0;
+            margin: 0 auto;
+        }
+
+        li {
+            /* outline: 1px solid blue; */
+            list-style-type: none;
+            text-align: center;
+        }
+    </style>
+</head>
+
+<body>
+    <div id="container">
+        <div class="header">
+            <h1>Header</h1>
+        </div>
+        <div class="navigation">
+            <nav>
+                <ul>
+                    <li>Home</li>
+                    <li>Menu</li>
+                    <li>Contact</li>
+                </ul>
+            </nav>
+        </div>
+        <div class="content">
+            <h2>Hello World!</h2>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quia placeat voluptatibus quis, cum
+                molestiae
+                optio perferendis asperiores aspernatur deserunt. Dolores tempore consectetur quod excepturi, iure
+                error
+                rem corporis libero quam.</p>
+            <h2>Hello World!</h2>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quia placeat voluptatibus quis, cum
+                molestiae
+                optio perferendis asperiores aspernatur deserunt. Dolores tempore consectetur quod excepturi,
+                iure
+                error
+                rem corporis libero quam.</p>
+        </div>
+    </div>
+</body>
+
+</html>
