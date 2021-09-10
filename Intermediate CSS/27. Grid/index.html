@@ -11,40 +11,102 @@
 
         #grid {
             display: grid;
-            grid-template-columns: auto auto auto;
-            grid-row-gap: 30px;
+            grid-template-columns: auto auto auto auto;
+            grid-row-gap: 20px;
             grid-column-gap: 30px;
         }
 
         .item {
-            outline: 3px solid red;
+            /* outline: 2px solid red; */
         }
 
         .item1,
         .item4 {
             grid-column-start: 1;
-            grid-column-end: 4;
+            grid-column-end: 5;
         }
 
         .item2 {
             grid-row-start: 2;
             grid-row-end: 6;
+            /* width: 3rem; */
         }
 
         .item3 {
             grid-row-start: 2;
             grid-row-end: 6;
             grid-column-start: 2;
-            grid-column-end: 4;
+            grid-column-end: 5;
+        }
+
+        .header {
+            padding: 0 1rem;
+            background-color: #ccc;
+            color: #555;
+            border-bottom: 2px solid black;
+        }
+
+        h1 {
+            /* margin: 0; */
+            /* padding: 0 1rem; */
+        }
+
+        .navigation {
+            border-right: 2px solid black;
+        }
+
+
+        nav>ul {
+            /* outline: 1px solid blue; */
+            padding: 0 0;
+            margin: 0 auto;
+        }
+
+        li {
+            /* outline: 1px solid blue; */
+            list-style-type: none;
+            text-align: center;
+            padding: 0 1rem;
+        }
+
+        .content {
+            flex-basis: 80%;
+            flex-grow: 1;
+            flex-shrink: 0;
+            padding: 0 1rem;
         }
     </style>
 </head>
 
 <body>
     <div id="grid">
-        <div class="item item1">1</div>
-        <div class="item item2">2</div>
-        <div class="item item3">3</div>
+        <div class="item item1 header">
+            <h1>Header</h1>
+        </div>
+        <div class="item item2 navigation">
+            <nav>
+                <ul>
+                    <li>Home</li>
+                    <li>Menu</li>
+                    <li>Contact</li>
+                </ul>
+            </nav>
+        </div>
+        <div class="item item3 content">
+            <h2>Hello World!</h2>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quia placeat voluptatibus quis, cum
+                molestiae
+                optio perferendis asperiores aspernatur deserunt. Dolores tempore consectetur quod excepturi, iure
+                error
+                rem corporis libero quam.</p>
+            <h2>Hello World!</h2>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quia placeat voluptatibus quis, cum
+                molestiae
+                optio perferendis asperiores aspernatur deserunt. Dolores tempore consectetur quod excepturi,
+                iure
+                error
+                rem corporis libero quam.</p>
+        </div>
         <div class="item item4">4</div>
         <!-- <div class="item item5">5</div>
         <div class="item item6">6</div>
