@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body {
+            background-color: black;
+            margin: 0;
+            padding: 0;
+        }
+
+        .box_fixed {
+            position: fixed;
+            background-color: #f5f5f5;
+            border-bottom: 2px solid #ccc;
+            width: 100%;
+            padding: 20px;
+            top: 0;
+            color: black;
+        }
+
+        .box_sticky {
+            position: sticky;
+            background-color: #f5f5f5;
+            border-bottom: 2px solid #ccc;
+            padding: 20px;
+            top: 0;
+            color: black;
+        }
+
+        .big_height {
+            color: white;
+            font-size: 10rem;
+            /* background-color: darkblue; */
+            /* height: 200rem; */
+        }
+    </style>
+</head>
+
+<body>
+    <div>
+        <div class="box_fixed">
+            section 1
+        </div>
+        <p class="big_height">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Unde autem iste dolorum,
+            laudantium nam natus
+            cupiditate ut qui sequi cumque vero excepturi obcaecati corrupti perspiciatis, earum iure quis quibusdam
+            quisquam!
+        </p>
+        <div class="box_sticky">
+            section 2
+        </div>
+        <p class="big_height">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Unde autem iste dolorum,
+            laudantium nam natus
+            cupiditate ut qui sequi cumque vero excepturi obcaecati corrupti perspiciatis, earum iure quis quibusdam
+            quisquam!
+        </p>
+    </div>
+</body>
+
+</html>
